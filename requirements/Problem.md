@@ -14,10 +14,10 @@ Design a solution for AirMagic company with following features
 > TODO : some more features
 
 ## Implementation Hints
-- Appropriate classes, relationsips
+- Appropriate classes, relationsips (Simple OO Design)
 - Class Diagrams
 - Java Features (OOP)
-- Modular code (packages)
+- Modular code (packages, jar files)
 - Error Handling (exceptions)
 - Persistency (File IO)
 - Unit Testing (JUnit)
