@@ -58,4 +58,5 @@
 - [ ] Networking
 - [ ] Protobuf
 - [ ] Static Analysis (Checkstyle/PMD)
+- [ ] Logging (log4j)
 
