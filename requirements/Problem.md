@@ -9,7 +9,9 @@ Design a solution for AirMagic company with following features
 - Find customer by unique ID
 - Find average balance of all prepaid customers
 - Find the postpaid customer with max outstanding amount.
-- 
+- Count no.of customers having balance in given range
+
+> TODO : some more features
 
 ## Implementation Hints
 - Appropriate classes, relationsips
