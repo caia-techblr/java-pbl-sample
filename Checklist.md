@@ -57,10 +57,6 @@
 - [ ] Threading
 - [ ] Networking
 - [ ] Protobuf
+- [ ] Static Analysis (Checkstyle/PMD)
+- [ ] 
 
-# Approach
-- [ ] Quizizz or alternatives
-- [ ] GIT Usage
-- [ ] H5P formats, Interactive Video
-- [ ] Flipped Learning
-- [ ] Collobarative Learning
