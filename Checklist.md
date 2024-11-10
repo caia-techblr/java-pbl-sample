@@ -58,5 +58,4 @@
 - [ ] Networking
 - [ ] Protobuf
 - [ ] Static Analysis (Checkstyle/PMD)
-- [ ] 
 
