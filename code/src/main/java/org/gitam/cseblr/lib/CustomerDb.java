@@ -1,5 +1,5 @@
 package org.gitam.cseblr.lib;
-class CustomerDb
+public class CustomerDb
 {
 
 }
