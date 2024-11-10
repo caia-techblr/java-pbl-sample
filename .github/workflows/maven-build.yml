@@ -26,9 +26,9 @@ jobs:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: Compile Code with Apache Maven
-      run: mvn -B compile --file pom.xml
+      run: mvn -B compile --file code/pom.xml
       
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package --file code/pom.xml
 
 
