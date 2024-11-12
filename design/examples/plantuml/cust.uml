@@ -1,4 +1,4 @@
-class Customer {
+class Customer  [[java:org.gitam.cseblr.ICustomer]]  {
   -mId:int
   -mName:String
   -mBaance:double
@@ -6,11 +6,11 @@ class Customer {
   +{abstract} void makeCall()
   +double getBalance()
 }
-class PrepaidCustomer {
+class PrepaidCustomer  [[java:org.gitam.cseblr.ICustomer]]  {
   +void credit()
   +void makeCall()
 }
-class PostpaidCustomer {
+class PostpaidCustomer  [[java:org.gitam.cseblr.ICustomer]]  {
   +void credit()
   +void makeCall()
 }
