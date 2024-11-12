@@ -1,0 +1,24 @@
+@startuml
+class Car
+class Bus
+class Address
+class Vehicle [[java:org.gitam.sdv.Vehicle]] {
+	-mEng: Engine
+	-mSpeed: int
+	-mWheels: int
+	+Vehicle(speed:int,wheels:int)
+	+accelerate(sp: int): void
+}
+enum FuelType [[java:org.gitam.sdv.FuelType]] {
+	Diesel
+	Petrol
+}
+Vehicle "1" *-up- "1" Engine: Composition
+Vehicle <|-down- Car : Inheritance
+Vehicle <|-down- Bus : Inheritance
+Vehicle "1" o-up- "1" Address : Aggregation
+@enduml
+
+
+
+

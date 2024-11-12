@@ -1,0 +1,18 @@
+class Customer {
+  -mId:int
+  -mName:String
+  -mBaance:double
+  +{abstract} void credit()
+  +{abstract} void makeCall()
+  +double getBalance()
+}
+class PrepaidCustomer {
+  +void credit()
+  +void makeCall()
+}
+class PostpaidCustomer {
+  +void credit()
+  +void makeCall()
+}
+Customer <|-down- PrepaidCustomer : Inheritance
+Customer <|-down- PostpaidCustomer : Inheritance
