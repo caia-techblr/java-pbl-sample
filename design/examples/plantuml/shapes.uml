@@ -1,0 +1,36 @@
+@startuml
+class Triangle [[java:org.gitam.cseblr.Triangle]] {
+}
+class Polygon {
+}
+Polygon <|-- Triangle
+class Cirlce [[java:org.gitam.cseblr.Cirlce]] {
+}
+interface IShape {
+  + area() : double
+  + circumference() : double
+}
+IShape <|.. Cirlce
+interface IShape [[java:org.gitam.cseblr.IShape]] {
+}
+abstract class Polygon [[java:org.gitam.cseblr.Polygon]] {
+  - nSides : int
+  + Polygon(sides:int)
+}
+interface IShape {
+}
+IShape <|.. Polygon
+class PolymorohicDemo [[java:org.gitam.cseblr.PolymorohicDemo]] {
+	+{static} main(args: String[]): void
+}
+class Rectangle [[java:org.gitam.cseblr.Rectangle]] {
+  - length : int
+  - breadth : int
+  + Rectangle(l:int,b:int)
+  + area():double
+  + circumference() : double
+}
+class Polygon {
+}
+Polygon <|-- Rectangle
+@enduml
