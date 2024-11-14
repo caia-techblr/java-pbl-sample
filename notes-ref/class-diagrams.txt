@@ -1,0 +1,10 @@
+interface ICustomer
+class Customer
+class PrepaidCustomer
+class PostpaidCustomer
+class CustomerList
+
+ICustomer  <|-down- Customer
+Customer <|-down- PrepaidCustomer
+Customer <|-down- PostpaidCustomer
+CustomerList *-down- ICustomer
