@@ -20,6 +20,8 @@ public class ArrayListDemo {
     for(Integer v : alist)
        sum += v;
 
+    alist.forEach(  n -> { System.out.println("" + n); });
+
     Iterator<Integer> iter;
     iter = alist.iterator();
     while(iter.hasNext())

@@ -8,7 +8,10 @@ class PrepaidTest {
 
 	@Test
 	void test() {
-		fail("Not yet implemented");
+		PrepaidCustomer pre = new PrepaidCustomer(/*....*/);
+		pre.credit(100.0);
+		pre.makeCall(125);
+		assertEquals(pre.getBalance(), /*..*/ );
 	}
 
 }
