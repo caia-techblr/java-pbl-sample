@@ -10,25 +10,32 @@ public class ArrayListDemo {
     ArrayList<Integer> alist;
     alist=new ArrayList<Integer>();
 
-    alist.add(10);  //alist.add(new Integer(10));
-    alist.add(36);
+    alist.add(10);  //boxing
+    alist.add(36);  //alist.add(new Integer(10));
     alist.add(48);
     alist.add(24);
     alist.add(20);
 
-    alist.sort(new ValueComparator());
-    //Collections.sort(alist);
+    int sum = 0;
+    for(Integer v : alist)
+       sum += v;
 
-    for(Integer x:alist)
-       System.out.println(""+x);
+    Iterator<Integer> iter;
+    iter = alist.iterator();
+    while(iter.hasNext())
+    {
+      int x = iter.next();  //Unboxing
+      sum += x;
+    }
 
-    //alist.remove(3);
-    //alist.remove(new Integer(36));
+    alist.remove(3);
+    alist.remove(Integer.valueOf(48));
 
-    Iterator<Integer> iter=alist.iterator();
+    Collections.sort(alist);
 
-    while(iter.hasNext()) {
-      System.out.println(""+iter.next());    
-    }    
+    int mx = Collections.min(alist);
+    int my = Collections.max(alist);
+
   }
+    
 }
